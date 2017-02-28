@@ -15,12 +15,11 @@
 #' This function calculates WHO/ISH risk scores for any epidemiological subregion based on the values of six paramters passed to it (age, gender, smoking status, systolic blood pressure, diabetes status, and total cholesterol).
 #' @export
 
-
 WHO_ISH_Risk<- function (age,gdr,smk,sbp,dm,chl, subregion) {
 
   #Load required data
   df<-data.frame(age,gdr,smk,sbp,dm,chl)
-  ref<-read.csv(file="WHO_ISH_Scores.csv", header=T)
+  ref<-read.csv(file=system.file("extdata", "WHO_ISH_Scores.csv", package = "whoishRisk"))
 
   #Warning Messages
   if(any(df$age < 19)) warning("At least one age is 18 or younger")
