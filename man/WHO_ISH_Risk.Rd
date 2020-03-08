@@ -33,4 +33,3 @@ This function calculates WHO/ISH risk scores for any epidemiological subregion b
 \author{
 Dylan R.J. Collins, Joseph Lee, Niklas Bobrovtiz, Constantinos Koshiaris, Alison Ward, Carl Heneghan
 }
-

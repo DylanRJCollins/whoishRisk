@@ -13,28 +13,51 @@
 #' @author Rodrigo Citton P. dos Reis, Dylan R.J. Collins, Joseph Lee, Niklas Bobrovtiz, Constantinos Koshiaris, Alison Ward, Carl Heneghan
 #' @details
 #' This function calculates the updated 2019 WHO 10-year CVD risk scores for any epidemiological subregion based on the values of six paramters passed to it (age, gender, smoking status, systolic blood pressure, diabetes status, and total cholesterol).
+#'
 #' Subregions:
+#'
 #'   "N_AFR_ME": North Africa and Middle East
+#'
 #'   "CSS_AFR": Central Sub-Saharan Africa
+#'
 #'   "ESS_AFR": Eastern Sub-Saharan Africa
+#'
 #'   "SSS_AFR": Southern Sub-Saharan Africa
+#'
 #'   "WSS_AFR": Western Sub-Saharan Africa
+#'
 #'   "SN_LAT_AME": Southern Latin America
+#'
 #'   "HI_N_AME": High-income North America
+#'
 #'   "CAR": Caribbean
+#'
 #'   "AND_LAT_AME": Andean Latin America
+#'
 #'   "CEN_LAT_AME": Central Latin America
+#'
 #'   "TRO_LAT_AME": Tropical Latin America
+#'
 #'   "EAS_ASI": East Asia
+#'
 #'   "SOU_ASI": South Asia
+#'
 #'   "SE_ASI": Southeast Asia
+#'
 #'   "CEN_ASI": Central Asia
+#'
 #'   "HI_ASI_PAC": High-income Asia Pacific
+#'
 #'   "WES_EUR": Western Europe
+#'
 #'   "CEN_EUR": Central Europe
+#'
 #'   "EAS_EUR": Eastern Europe
+#'
 #'   "OCE": Oceania
+#'
 #'   "AUS": Australasia
+#'
 #' @references
 #' The WHO CVD Risk Chart Working Group. (2019). World Health
 #' Organization cardiovascular disease risk charts: revised models to
