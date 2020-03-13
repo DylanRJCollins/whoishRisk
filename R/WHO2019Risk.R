@@ -71,24 +71,24 @@ WHO_CVD_Risk_2019 <- function(age, gdr, smk, sbp, dm, chl, subregion) {
   ref <- read.csv(file = system.file("extdata", "WHO_2019_Scores.csv", package = "whoishRisk"))
 
   #Warning Messages
-  if (any(df$age < 19))
-    warning("At least one age is 18 or younger")
-  if (any(df$age > 100))
-    warning("At least one age is greater than 100")
-  if (any(df$gdr > 1))
-    warning("Gender must be equal to 0 or 1")
-  if (any(df$smk > 1))
-    warning("Smoking must be equal to 0 or 1")
-  if (any(df$sbp < 90))
-    warning("At least one systolic blood pressure is below 90 mmHg")
-  if (any(df$sbp > 250))
-    warning("At least one systolic blood pressure is over 250 mmHg")
-  if (any(df$dm > 1))
-    warning("Diabetes status must be equal to 0 or 1")
-  if (any(df$chl > 10))
-    warning(
-      "At least one total cholesterol is greater than 10 mmol/L. Ensure all values are in units of mmol/L"
-    )
+  # if (any(df$age < 19))
+  #   warning("At least one age is 18 or younger")
+  # if (any(df$age > 100))
+  #   warning("At least one age is greater than 100")
+  # if (any(df$gdr > 1))
+  #   warning("Gender must be equal to 0 or 1")
+  # if (any(df$smk > 1))
+  #   warning("Smoking must be equal to 0 or 1")
+  # if (any(df$sbp < 90))
+  #   warning("At least one systolic blood pressure is below 90 mmHg")
+  # if (any(df$sbp > 250))
+  #   warning("At least one systolic blood pressure is over 250 mmHg")
+  # if (any(df$dm > 1))
+  #   warning("Diabetes status must be equal to 0 or 1")
+  # if (any(df$chl > 10))
+  #   warning(
+  #     "At least one total cholesterol is greater than 10 mmol/L. Ensure all values are in units of mmol/L"
+  #   )
 
 
   #Age
